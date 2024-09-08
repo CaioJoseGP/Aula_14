@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple-title-product</title>
+
+    <link rel="stylesheet" href="./assets/styles/header_footer.css">
+    <link rel="stylesheet" href="./assets/styles/produto.css">
+
+    <link rel="icon" href="./assets/images/construsul_icon.png" type="image/png">
+
+    <!-- Ionicons Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="index.html" title="Voltar ao Início">
+                <h1 class="invisible">Construsul</h1>
+                <img src="./assets/images/construsul_logo.png" alt="Logo da Construsul">
+            </a>
+        </div>
+        <nav id="navbar-header">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/eng_igorgm/" target="_blank" title="Deseja construir uma casa?">Engenheiro Estrutural</a>
+                </li>
+                                
+                <li>
+                    <a href="contato.html" title="Entre em Contanto!">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <form id="form-pesquisa" method="post">
+            <label for="txtPesquisa"><ion-icon name="search-sharp"></ion-icon></label>
+            <input type="text" id="txtPesquisa" name="txtPesquisa" placeholder="Faça uma pesquisa">
+            
+            <input type="submit" class="submit" value="Enviar">
+        </form>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <img id="imagem" src="#" alt="#">
+            <h2 id="nome-produto">#</h2>
+            <span id="preco">#</span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="orcamento">
+            <h2>Quer fazer um ORÇAMENTO para sua Construção?</h2>
+            <p>Responda o <b>formulário</b> abaixo:</p>
+        
+            <form id="form-orcamento" method="post" action="mailto:seuemail@dominio.com">
+                <fieldset>
+                    <legend>Dados do Cliente</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+        
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(64) 99999-9999" required>
+        
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua/Av. Setor Num Qd/Lt" required>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Detalhes da Construção</legend>
+                    
+                    <p>Tipo de Material:</p>
+                    <label for="cimento">
+                        <input type="checkbox" id="cimento" name="tipo-material" value="cimento">
+                        Cimento
+                    </label><br>
+                
+                    <label for="tijolo">
+                        <input type="checkbox" id="tijolo" name="tipo-material" value="tijolo">
+                        Tijolo
+                    </label><br>
+                
+                    <label for="areia">
+                        <input type="checkbox" id="areia" name="tipo-material" value="areia">
+                        Areia
+                    </label><br>
+                
+                    <label for="pedra">
+                        <input type="checkbox" id="pedra" name="tipo-material" value="pedra">
+                        Pedra
+                    </label><br>
+                
+                    <label for="outro">
+                        <input type="checkbox" id="outro" name="tipo-material" value="outro">
+                        Outro (Coloque em Observações)
+                    </label><br>
+        
+                    <label for="quantidade">Quantidade (em unidades ou m³):</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+        
+                    <label for="observacoes">Observações:</label>
+                    <textarea id="observacoes" name="observacoes"></textarea>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Dados Adicionais</legend>
+                    
+                    <label for="data">Data para Entrega:</label>
+                    <input type="date" id="data" name="data" required>
+        
+                    <label for="local">Local de Entrega:</label>
+                    <input type="text" id="local" name="local" required>
+                </fieldset>
+        
+                <input type="submit" class="submit" value="Enviar">
+            </form>
+            <!--enviar por email-->
+        </div>
+
+        <div class="footer-content">
+            <nav id="navbar-footer">
+                <ul class="footer-links">
+                    <li>
+                        <ul class="links">
+                            <li>
+                                <h2><ion-icon name="share-social-sharp"></ion-icon> Redes Sociais</h2>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/construsul_/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li>
+                        <ul class="links">
+                            <li>
+                                <h2>Sobre Nós</h2>
+                            </li>
+                            <li>
+                                <a href="historia.html" title="Conheça um pouco sobre nossa história.">Nossa História</a>
+                            </li>
+                            <li>
+                                <a href="https://guiafacil.com/site/construsul/morrinhos/go/6434162189" target="_blank">GuiaFacil</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <address>
+                <ul>
+                    <li>
+                        <h2>Informações</h2>
+                    </li>
+                    <li><ion-icon name="logo-whatsapp"></ion-icon> (64) 3416-2189</li>
+                    <li><ion-icon name="logo-whatsapp"></ion-icon> <del>(64) 3416-2111</del></li>
+                    <li><ion-icon name="location-sharp"></ion-icon> Av. Cel. Fernando Barbosa n°283 Setor Aeroporto</li>
+                    <li><ion-icon name="compass-sharp"></ion-icon> Morrinhos - GO</li>
+                </ul>
+
+                <img src="./assets/images/construsul_portrait.png" alt="Informações da loja">
+            </address>
+        </div>
+
+        <div class="copyright">
+            <p>&copy;&nbsp2024&nbsp;Construsul.&nbspTodos&nbspos&nbspdireitos&nbspreservados.</p>
+            <p><ion-icon name="compass-sharp"></ion-icon> Builded and Designed by <a href="https://github.com/CaioJoseGP">@Caio</a></p>
+        </div>
+    </footer>
+
+    <!-- DOM Scripts -->
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

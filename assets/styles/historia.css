@@ -1,0 +1,82 @@
+@import url("variables.css");
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--grey);
+    background-color: #f5f5f5; 
+}
+
+ul li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Content */
+.content {
+    margin-top: 12.6rem;
+    padding: 20px;
+    background-color: var(--lightsteelblue);
+    color: var(--grey);
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+section ul li::before {
+    content: ">";
+    color: var(--blue);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+}
